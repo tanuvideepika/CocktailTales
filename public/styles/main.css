@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    /*background-color: #121212;*/ /* Dark theme background color */
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(8) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(121, 58%, 10%, 1)'/><path d='M27.26 5.415c-.55 0-.9.55-.65 1l2.45 4.75c.2.5.85.5 1.15.1l3.15-4.5c.3-.4 0-1.05-.55-1.1zM10.689 8.068c-.406-.051-.822.31-.778.748l.5 5.3c.05.5.6.8 1.05.5l4.55-3.05c.45-.3.4-.95-.05-1.15l-5.1-2.3a.605.605 0 0 0-.172-.048zM2.406 24.584a.635.635 0 0 0-.345.081l-4.75 2.4c-.45.2-.5.85-.1 1.15l4.45 3.15c.4.3 1 0 1.1-.5l.3-5.55c0-.412-.31-.712-.655-.73zm40 0a.635.635 0 0 0-.345.081l-4.75 2.4c-.45.2-.5.85-.1 1.15l4.45 3.15c.4.3 1 0 1.1-.5l.3-5.55c0-.412-.31-.712-.655-.73zm-22.17 3.108a.744.744 0 0 0-.675.723l.4 5.55c.05.5.6.8 1.05.5l4.45-2.95c.45-.25.4-.9-.05-1.15l-4.8-2.6a.702.702 0 0 0-.376-.073z'  stroke-width='1' stroke='none' fill='hsla(141, 89%, 14%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,-120)' fill='url(%23a)'/></svg>");
+    
+    color: #fff; /* Text color */
+  }
+  
+  .header {
+    background-color: hsla(141, 66%, 37%, 1);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    flex: 1; /* Fill available vertical space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .greeting {
+    text-align: center;
+  }
+  
+  .search-bar {
+    margin-top: 20px;
+    text-align: center;
+    
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  #button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  #button:hover {
+    background-color: #45a049;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+
+  /* Existing CSS styles above this comment */
+
+.cocktail-details {
+    text-align: center;
+    margin-bottom: 40px; /* Add some margin for separation */
+  }
+  
+  .cocktail-name {
+    font-size: 24px;
+  }
+  
+  .cocktail-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .cocktail-image {
+    width: 300px; /* Set image width as needed */
+    border-radius: 10px; /* Add some border radius for aesthetics */
+    margin-right: 20px; /* Add margin to separate image and information */
+  }
+  
+  .cocktail-info {
+    text-align: left;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .ingredients {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Existing CSS styles below this comment */
+
+  /* Existing CSS styles above this comment */
+
+.cocktail-card {
+    width: 300px; /* Fixed width for each card */
+    margin: 10px; /* Add margin around each card */
+   
+  }
+  
+  .cocktail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .cocktail-image {
+    width: 100%; /* Make the image fill the container */
+    border-radius: 10px; /* Add some border radius for aesthetics */
+    margin-bottom: 10px; /* Add margin below the image */
+  }
+  
+  .cocktail-info {
+    text-align: center;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 600px) {
+    .main-content {
+      display: flex;
+      flex-wrap: wrap; /* Enable flex container to wrap items to the next line */
+      justify-content: center; /* Center items horizontally */
+    }
+  }
+  
+  
+  /* Existing CSS styles below this comment */
+  
+  
+  

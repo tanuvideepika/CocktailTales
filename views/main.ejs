@@ -1,0 +1,31 @@
+<% if (locals.cocktails.drinks) { %>
+    <% let n=locals.cocktails.drinks.length; %>
+
+<% for( let i = 0; i < n; i++ ) { %>
+    <div class="cocktail-card">
+        <h2 class="cocktail-name"><%= locals.cocktails.drinks[i].strDrink %></h2>
+        <div class="cocktail-container">
+          <img src="<%= locals.cocktails.drinks[i].strDrinkThumb %>" alt="Margarita Image" class="cocktail-image">
+          <div class="cocktail-info">
+            <p class="description"><%=  locals.cocktails.drinks[i].strInstructions%></p>
+            <p class="ingredients">Ingredients:</p>
+            <ul>
+                
+                <% for( let k= 1; k < 16; k++ ) { %>
+                    <% if (locals.cocktails.drinks[i]['strIngredient'+k]) { %>
+                        <li><%= locals.cocktails.drinks[i]['strMeasure'+ k] %> of <%= locals.cocktails.drinks[i]['strIngredient'+ k] %></li>
+                    <% } %>
+                    
+                <% } %>
+                
+            </ul>
+          </div>
+        </div>
+<% } %>
+<% } else {%>
+    <div class="greeting">
+        <h1>No results found. Try some other keywords!</h1>
+        
+      </div>
+<% } %>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <title>CocktailTales</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caveat:wght@700&family=Kanit&family=Libre+Baskerville&display=swap');
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">CocktailTales</div>
+    
+  </header>
+  
+  <main class="main-content">
+    <% if (locals.content) { %>        
+        <%- include(locals.content, {cocktails: locals.cocktail}); %>
+    <% } else {%>
+        some error has occured!
+    <% } %>
+  </main>
+  <form id="myForm" method="post" style="width: 100px; align-items: right; margin-left: auto; margin-right: 5px; ">
+  <input id="button" type="submit" value="Home" formaction="/" style="width: 100px; align-items: right; margin-left: auto; margin-right: 5px; ">
+    </form>
+  <footer class="footer">
+    <% let currentDate = new Date();
+  let currentYear = currentDate.getFullYear(); %>
+    <p>&copy; <%= currentYear %> CocktailTales. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
